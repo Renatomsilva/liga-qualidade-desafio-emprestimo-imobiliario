@@ -11,7 +11,7 @@ public class Solucao {
 
     public static String processMessages(List<String> messages) {
 
-        StringBuilder proposalsApproved = new StringBuilder();
+        ArrayList<String> proposalsApproved = new ArrayList<String>();
         Map<String, List<String>> proposals = new HashMap<String, List<String>>();
 
         for(String line : messages) {
@@ -22,9 +22,10 @@ public class Solucao {
             proposals.get(currentProposalId).add(line);
         }
 
-        for (List<String> linesOfProposal: proposals.values()) {
-            ProposalAnalyzer.analyse(linesOfProposal);
-        }
-        return proposalsApproved.toString();
+
+      for (List<String> linesOfProposal: proposals.values()) {
+           ProposalAnalyzer.analyse(linesOfProposal, proposalsApproved);
+      }
+        return proposalsApproved.toString().replace("[", "").replace("]","").replace(" ", "");
     }
 }

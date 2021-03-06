@@ -45,4 +45,18 @@ public class LineAnalyzer {
         return null;
     }
 
+    public static Boolean isProponentIncomeValid1824(String line) {
+
+        return null;
+    }
+
+    public static Boolean isProponentIncomeValid2450(String lines) {
+
+        return null;
+    }
+    public static Boolean isProponentIncomeValid50(String line) {
+
+        return null;
+    }
+
 }

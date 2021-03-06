@@ -1,16 +1,14 @@
 package br.com.zup.edu.ligaqualidade.desafioemprestimoimobiliario.modifique;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
-
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
-
-import br.com.zup.edu.ligaqualidade.desafioemprestimoimobiliario.modifique.Solucao;
 
 public class SolucaoTest {
 	
